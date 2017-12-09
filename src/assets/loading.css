@@ -1,0 +1,24 @@
+@keyframes scale{
+  50%{
+    transform:scale3d(0,0,0);
+  }
+}
+@keyframes circle{
+  0%{
+    transform: rotateZ(0);
+    /*transform: rotate3d(0);*/
+  }
+  100%{
+    transform: rotateZ(360deg);
+  }
+}
+
+.loading-box{
+  width: 100px;
+  height: 100px;
+  border: 10px solid #ccc;
+  border-radius: 50%;
+  display: block;
+  border-top:10px solid #64efb9;
+  animation: circle 1.5s infinite;
+}
